@@ -14,7 +14,7 @@ var map = function (array, callback) // Creating a function named map with 2 par
     var new_array = []; // creating a new array that will store the result
     array.forEach(function (num) 
     {
-    new_array.push(callback(num));  //Map function iterates over the array and invokes the given callback and returns the value into a new_array.
+    new_array.push(callback(num));  //Map function iterates over the array and invokes the given callback and pushes the value into a new_array.
     });
 
 console.log("New array: " + new_array);
