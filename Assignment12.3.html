@@ -1,0 +1,29 @@
+<!-- This assignment helps to master the concept of Functional Programming -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment 12.3</title>
+</head>
+<body>
+<script>
+var map = function (array, callback) // Creating a function named map with 2 parameters array and the callback
+{ 
+    var new_array = []; // creating a new array that will store the result
+    array.forEach(function (num) 
+    {
+    new_array.push(callback(num));  //Map function iterates over the array and invokes the given callback and returns the value into a new_array.
+    });
+
+console.log("New array: " + new_array);
+};
+
+var result = map([2,4,6], function (num1) //Input for the map function
+{ 
+    return num1* 2;
+});
+</script>
+</body>
+</html>
